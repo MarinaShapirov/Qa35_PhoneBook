@@ -20,7 +20,7 @@ public class AppManager {
 
     }
     public void Stop(){
-        wd.quit();
+        //wd.quit();
     }
 
     public HelperUser getHelperUser() {

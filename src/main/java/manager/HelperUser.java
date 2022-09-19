@@ -1,5 +1,7 @@
 package manager;
 
+import models.User;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,15 +29,17 @@ public class HelperUser extends HelperBase{
     }
 
     public void fillLoginRegstrForm(String email, String password ){
-        WebElement inpEmail = wd.findElement(By.xpath("//input[@placeholder='Email']"));
+        /*WebElement inpEmail = wd.findElement(By.xpath("//input[@placeholder='Email']"));
         inpEmail.click();
         inpEmail.clear();
-        inpEmail.sendKeys(email);
+        inpEmail.sendKeys(email);*/
+        type(By.xpath("//input[@placeholder='Email']"), email);
+        type(By.xpath("//input[@placeholder='Password']"), password);
+    }
 
-        WebElement inpPsw = wd.findElement(By.xpath("//input[@placeholder='Password']"));
-        inpPsw.click();
-        inpPsw.click();
-        inpPsw.sendKeys(password);
+    public void fillLoginRegstrForm(User user ){
+        type(By.xpath("//input[@placeholder='Email']"), user.getEmail());
+        type(By.xpath("//input[@placeholder='Password']"), user.getPassword());
     }
 
     public void submitLogin(){
@@ -44,4 +48,22 @@ public class HelperUser extends HelperBase{
         loginBtn.click();
     }
 
+    public boolean isAlertAppear() {
+        boolean res = false;
+        Alert alert = wd.switchTo().alert();
+        if (alert !=null)
+            res = true;
+        return res;
+    }
+
+    public boolean isWrongFormatErr() {
+
+        Alert alert = wd.switchTo().alert();
+        String errText = alert.getText();
+        System.out.println(errText);
+        //click OK btn on alert window
+        alert.accept();
+
+        return errText.contains("Wrong email or password format");
+    }
 }
