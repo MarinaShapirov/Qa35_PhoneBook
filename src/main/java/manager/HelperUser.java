@@ -48,6 +48,12 @@ public class HelperUser extends HelperBase{
         loginBtn.click();
     }
 
+    public void submitRegstr(){
+        //login submit
+        WebElement loginBtn = wd.findElement(By.xpath("//*[text()=' Registration']"));
+        loginBtn.click();
+    }
+
     public boolean isAlertAppear() {
         boolean res = false;
         Alert alert = wd.switchTo().alert();
@@ -63,7 +69,6 @@ public class HelperUser extends HelperBase{
         System.out.println(errText);
         //click OK btn on alert window
         alert.accept();
-
         return errText.contains("Wrong email or password format");
     }
 }
