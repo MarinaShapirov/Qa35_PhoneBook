@@ -14,7 +14,7 @@ public class RegistrationTests extends TestBase {
     public void regstrSuccess(){
         int i = (int)(System.currentTimeMillis()/1000)%3600;
         User user = new User().withEmail("MarinaShp"+ i+ "@gmail.com").withPassword("Mmarina12345$");
-        app.getHelperUser().openRegstrForm();
+        app.getHelperUser().openLoginRegstrForm();
         app.getHelperUser().fillLoginRegstrForm(user);
         app.getHelperUser().submitRegstr();
         Assert.assertTrue(app.getHelperUser().isLogged());
@@ -24,7 +24,7 @@ public class RegistrationTests extends TestBase {
     public void regstrNegative_WrongEmail() {
         User user = new User().withEmail("MarinaShpgmail.com").withPassword("Mmarina12345$");
 
-        app.getHelperUser().openRegstrForm();
+        app.getHelperUser().openLoginRegstrForm();
         app.getHelperUser().fillLoginRegstrForm(user);
         app.getHelperUser().submitRegstr();
         Assert.assertFalse(app.getHelperUser().isLogged());
@@ -37,7 +37,7 @@ public class RegistrationTests extends TestBase {
     public void regstrNegative_WrongPsw() {
         User user = new User().withEmail("MarinaShp@gmail.com").withPassword("Mm");
 
-        app.getHelperUser().openRegstrForm();
+        app.getHelperUser().openLoginRegstrForm();
         app.getHelperUser().fillLoginRegstrForm(user);
         app.getHelperUser().submitRegstr();
         Assert.assertFalse(app.getHelperUser().isLogged());

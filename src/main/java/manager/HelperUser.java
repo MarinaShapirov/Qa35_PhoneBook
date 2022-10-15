@@ -23,7 +23,7 @@ public class HelperUser extends HelperBase{
         wd.findElement(By.xpath("//button[text()='Sign Out']")).click();
     }
 
-    public void openRegstrForm(){
+    public void openLoginRegstrForm(){
         WebElement loginTab = wd.findElement(By.xpath("//a[@href = '/login']"));
         loginTab.click();
     }
@@ -70,5 +70,11 @@ public class HelperUser extends HelperBase{
         //click OK btn on alert window
         alert.accept();
         return errText.contains("Wrong email or password format");
+    }
+
+    public void login(User user) {
+        openLoginRegstrForm();
+        fillLoginRegstrForm(user.getEmail(), user.getPassword());
+        submitLogin();
     }
 }

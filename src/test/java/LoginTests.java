@@ -23,7 +23,7 @@ public class LoginTests extends TestBase {
     @Test
     public void loginSuccessModel() {
         User user = new User().withEmail("MarinaShp@gmail.com").withPassword("Mmarina12345$");
-        app.getHelperUser().openRegstrForm();
+        app.getHelperUser().openLoginRegstrForm();
         app.getHelperUser().fillLoginRegstrForm(user);
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isLogged());
@@ -31,10 +31,15 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginSuccess() {
-        app.getHelperUser().openRegstrForm();
+        logger.info("Test starts with name ---> loginSuccess");
+
+        app.getHelperUser().openLoginRegstrForm();
         app.getHelperUser().fillLoginRegstrForm("MarinaShp@gmail.com", "Mmarina12345$");
+        logger.info("User login (MarinaShp@gmail.com, Mmarina12345$)");
+
         app.getHelperUser().submitLogin();
         Assert.assertTrue(app.getHelperUser().isLogged());
+        logger.info("Assert passed");
 
     }
 
@@ -42,7 +47,7 @@ public class LoginTests extends TestBase {
     public void loginNegative_WrongEmailFormat() {
         User user = new User().withEmail("MarinaShpgmail.com").withPassword("Mmarina12345$");
 
-        app.getHelperUser().openRegstrForm();
+        app.getHelperUser().openLoginRegstrForm();
         app.getHelperUser().fillLoginRegstrForm(user);
         app.getHelperUser().submitLogin();
         Assert.assertFalse(app.getHelperUser().isLogged());
@@ -55,7 +60,7 @@ public class LoginTests extends TestBase {
     public void loginNegative_WrongPswFormat() {
         User user = new User().withEmail("MarinaShp@gmail.com").withPassword("Mmarina12345");
 
-        app.getHelperUser().openRegstrForm();
+        app.getHelperUser().openLoginRegstrForm();
         app.getHelperUser().fillLoginRegstrForm(user);
         app.getHelperUser().submitLogin();
         Assert.assertFalse(app.getHelperUser().isLogged());
