@@ -9,10 +9,17 @@ import java.util.Random;
 public class AddNewContact extends TestBase{
     @BeforeMethod
     public void preCondition(){
-        if(!app.getHelperUser().isLogged())
-            app.getHelperUser().login(new User().withEmail("MarinaShp@gmail.com").withPassword("Mmarina12345$"));
+        logger.info("Authorization check");
+        if(!app.getHelperUser().isLogged()) {
+            User user = new User().withEmail("MarinaShp@gmail.com").withPassword("Mmarina12345$");
+            logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
+            app.getHelperUser().login(user);
+
+            }
+        else
+            logger.info("Authorized.");
     }
-    @Test
+    @Test()
     public void addNewContactSuccess(){
         Random random = new Random();
         int i = random.nextInt(1000)+1000;
@@ -24,11 +31,16 @@ public class AddNewContact extends TestBase{
                 .address("Address")
                 .description("Description")
                 .build();
+        logger.info("Add new contact: " + contact.toString());
+
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactAllForm(contact);
         app.getHelperContact().saveContactWithTab();
+        //
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
+        logger.info("ASSERT passed: isContactAddedByName");
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
+        logger.info("ASSERT passed: isContactAddedByPhone");
     }
 
     @Test
@@ -42,11 +54,16 @@ public class AddNewContact extends TestBase{
                 .email("name"+i+"@mail.com")
                 .address("Address")
                 .build();
+        logger.info("Add new contact: " + contact.toString());
+
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactRequiredForm(contact);
         app.getHelperContact().saveContactWithTab();
+
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
+        logger.info("ASSERT passed: isContactAddedByName");
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
+        logger.info("ASSERT passed: isContactAddedByPhone");
     }
 
 
@@ -60,11 +77,14 @@ public class AddNewContact extends TestBase{
                 .email("zoa@mail.com")
                 .address("Haifa")
                 .build();
+        logger.info("Add new contact: " + contact.toString());
 
         app.getHelperContact().openContactForm();
         app.getHelperContact().fillContactRequiredForm(contact);
         app.getHelperContact().saveContactWithTab();
+
         Assert.assertTrue(app.getHelperContact().isAddPageStillDisplayed());
+        logger.info("ASSERT passed: isAddPageStillDisplayed");
 
     }
 
