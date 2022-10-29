@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import java.util.Random;
 
 public class AddNewContact extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         logger.info("Authorization check");
         if(!app.getHelperUser().isLogged()) {
@@ -68,7 +68,7 @@ public class AddNewContact extends TestBase{
 
 
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void addNewContactWrongName(){
 
         Contact contact = Contact.builder()

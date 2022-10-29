@@ -14,7 +14,7 @@ import java.time.Duration;
 
 public class LoginTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         logger.info("Authorization check");
         if (app.getHelperUser().isLogged()) {
@@ -38,7 +38,7 @@ public class LoginTests extends TestBase {
         logger.info("ASSERT passed: isLogged");
     }
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void loginSuccess() {
         logger.info("User login (MarinaShp@gmail.com, Mmarina12345$)");
         app.getHelperUser().openLoginRegstrForm();
@@ -50,7 +50,7 @@ public class LoginTests extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void loginNegative_WrongEmailFormat() {
         User user = new User().withEmail("MarinaShpgmail.com").withPassword("Mmarina12345$");
         logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
@@ -68,7 +68,7 @@ public class LoginTests extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void loginNegative_WrongPswFormat() {
 
         User user = new User().withEmail("MarinaShp@gmail.com").withPassword("Mmarina12345");

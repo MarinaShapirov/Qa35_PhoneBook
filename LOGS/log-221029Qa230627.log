@@ -1,0 +1,410 @@
+23:06:29.537 INFO  manager.AppManager - Chrome driver was opened
+23:06:30.831 INFO  manager.AppManager - Current URL is ---> https://contacts-app.tobbymarshall815.vercel.app/home
+23:06:30.868 INFO  TestBase - START TEST WITH NAME: addNewContactSuccess
+23:06:30.870 INFO  TestBase - Authorization check
+23:06:30.871 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:35.942 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:35.943 INFO  manager.ListenerWD - List size: 0
+23:06:35.944 INFO  TestBase - User login: MarinaShp@gmail.com Mmarina12345$
+23:06:35.946 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:35.970 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:36.016 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:36.033 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:36.122 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:36.139 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:36.217 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:36.235 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:36.280 INFO  TestBase - Add new contact: Contact(name=Name1295, lastName=LastName, phone=34343451295, email=name1295@mail.com, address=Address, description=Description)
+23:06:36.280 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:06:36.870 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:06:36.903 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:06:36.923 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:06:37.001 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:06:37.016 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:06:37.082 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:06:37.096 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:06:37.175 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:06:37.191 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:06:37.267 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:06:37.281 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:06:37.353 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='description']
+23:06:37.367 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='description']
+23:06:37.446 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:06:37.460 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:06:38.054 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: h2
+23:06:38.402 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: h2
+23:06:38.403 INFO  manager.ListenerWD - List size: 5
+23:06:38.460 INFO  TestBase - ASSERT passed: isContactAddedByName
+23:06:38.460 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: h3
+23:06:38.493 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: h3
+23:06:38.493 INFO  manager.ListenerWD - List size: 5
+23:06:38.553 INFO  TestBase - ASSERT passed: isContactAddedByPhone
+23:06:38.556 INFO  TestBase - START TEST WITH NAME: addNewContactSuccessRequiredFields
+23:06:38.557 INFO  TestBase - Authorization check
+23:06:38.557 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:38.570 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:38.571 INFO  manager.ListenerWD - List size: 1
+23:06:38.571 INFO  TestBase - Authorized.
+23:06:38.571 INFO  TestBase - Add new contact: Contact(name=Name1265, lastName=LastName, phone=34343451265, email=name1265@mail.com, address=Address, description=null)
+23:06:38.572 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:06:38.588 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:06:38.614 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:06:38.630 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:06:38.713 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:06:38.726 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:06:38.807 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:06:38.819 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:06:38.902 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:06:38.917 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:06:38.999 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:06:39.011 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:06:39.088 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:06:39.099 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:06:39.685 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: h2
+23:06:39.939 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: h2
+23:06:39.939 INFO  manager.ListenerWD - List size: 6
+23:06:40.016 INFO  TestBase - ASSERT passed: isContactAddedByName
+23:06:40.016 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: h3
+23:06:40.053 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: h3
+23:06:40.053 INFO  manager.ListenerWD - List size: 6
+23:06:40.128 INFO  TestBase - ASSERT passed: isContactAddedByPhone
+23:06:40.131 INFO  TestBase - START TEST WITH NAME: addNewContactWrongName
+23:06:40.131 INFO  TestBase - Authorization check
+23:06:40.131 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:40.154 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:40.155 INFO  manager.ListenerWD - List size: 1
+23:06:40.155 INFO  TestBase - Authorized.
+23:06:40.156 INFO  TestBase - Add new contact: Contact(name=null, lastName=Snow, phone=34343452143568, email=zoa@mail.com, address=Haifa, description=null)
+23:06:40.157 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:06:40.177 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:06:40.205 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:06:40.216 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:06:40.290 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:06:40.302 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:06:40.381 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:06:40.391 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:06:40.485 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:06:40.496 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:06:40.572 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:06:40.586 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:06:41.181 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: a.active[href='/add']
+23:06:41.202 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: a.active[href='/add']
+23:06:41.203 INFO  manager.ListenerWD - List size: 1
+23:06:41.203 INFO  TestBase - ASSERT passed: isAddPageStillDisplayed
+23:06:41.206 INFO  TestBase - START TEST WITH NAME: loginNegative_WrongEmailFormat
+23:06:41.207 INFO  TestBase - Authorization check
+23:06:41.207 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:41.229 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:41.229 INFO  manager.ListenerWD - List size: 1
+23:06:41.229 INFO  TestBase - Authorized. Log out...
+23:06:41.230 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Sign Out']
+23:06:41.255 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Sign Out']
+23:06:41.295 INFO  TestBase - User login: MarinaShpgmail.com Mmarina12345$
+23:06:41.295 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:41.309 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:41.340 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:41.352 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:41.433 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:41.448 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:41.536 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:41.546 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:41.574 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:41.700 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:41.700 INFO  manager.ListenerWD - List size: 0
+23:06:41.700 INFO  TestBase - ASSERT passed: Not logged
+23:06:41.718 INFO  TestBase - ASSERT passed: isAlertAppear
+23:06:41.739 INFO  TestBase - ASSERT passed: isWrongFormatErrAppear
+23:06:41.741 INFO  TestBase - START TEST WITH NAME: loginNegative_WrongPswFormat
+23:06:41.743 INFO  TestBase - Authorization check
+23:06:41.743 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:46.782 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:46.782 INFO  manager.ListenerWD - List size: 0
+23:06:46.783 INFO  TestBase - Not authorized
+23:06:46.784 INFO  TestBase - User login: MarinaShp@gmail.com Mmarina12345
+23:06:46.784 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:46.806 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:46.840 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:46.851 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:46.941 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:46.952 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:47.022 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:47.032 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:47.053 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:47.240 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:47.241 INFO  manager.ListenerWD - List size: 0
+23:06:47.241 INFO  TestBase - ASSERT passed: Not logged
+23:06:47.257 INFO  TestBase - ASSERT passed: isAlertAppear
+23:06:47.283 INFO  TestBase - ASSERT passed: isWrongFormatErrAppear
+23:06:47.285 INFO  TestBase - START TEST WITH NAME: loginSuccess
+23:06:47.286 INFO  TestBase - Authorization check
+23:06:47.286 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.340 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.341 INFO  manager.ListenerWD - List size: 0
+23:06:52.341 INFO  TestBase - Not authorized
+23:06:52.342 INFO  TestBase - User login (MarinaShp@gmail.com, Mmarina12345$)
+23:06:52.342 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:52.366 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:52.397 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:52.413 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:52.504 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:52.514 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:52.611 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:52.623 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:52.646 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.788 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.789 INFO  manager.ListenerWD - List size: 1
+23:06:52.789 INFO  TestBase - ASSERT passed: isLogged
+23:06:52.813 INFO  TestBase - START TEST WITH NAME: loginSuccessModel
+23:06:52.815 INFO  TestBase - Authorization check
+23:06:52.815 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.829 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.830 INFO  manager.ListenerWD - List size: 1
+23:06:52.830 INFO  TestBase - Authorized. Log out...
+23:06:52.830 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.846 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Sign Out']
+23:06:52.877 INFO  TestBase - User login: MarinaShp@gmail.com Mmarina12345$
+23:06:52.878 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:52.893 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:52.924 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:52.936 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:53.037 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:53.048 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:53.118 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:53.127 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Login']
+23:06:53.152 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.300 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.301 INFO  manager.ListenerWD - List size: 1
+23:06:53.301 INFO  TestBase - ASSERT passed: isLogged
+23:06:53.304 INFO  TestBase - START TEST WITH NAME: regstrNegative_WrongEmail
+23:06:53.306 INFO  TestBase - Authorization check
+23:06:53.306 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.326 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.326 INFO  manager.ListenerWD - List size: 1
+23:06:53.326 INFO  TestBase - Authorized. Log out...
+23:06:53.327 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.342 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.376 INFO  TestBase - User login: MarinaShpgmail.com Mmarina12345$
+23:06:53.377 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:53.389 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:53.418 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:53.429 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:53.513 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:53.524 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:53.594 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Registration']
+23:06:53.605 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Registration']
+23:06:53.630 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.832 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:53.833 INFO  manager.ListenerWD - List size: 0
+23:06:53.833 INFO  TestBase - ASSERT passed: Not logged
+23:06:53.849 INFO  TestBase - ASSERT passed: isAlertAppear
+23:06:53.876 INFO  TestBase - ASSERT passed: isWrongFormatErrAppear
+23:06:53.877 INFO  TestBase - START TEST WITH NAME: regstrNegative_WrongPsw
+23:06:53.878 INFO  TestBase - Authorization check
+23:06:53.879 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:58.909 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:58.909 INFO  manager.ListenerWD - List size: 0
+23:06:58.909 INFO  TestBase - Not authorized
+23:06:58.910 INFO  TestBase - User login: MarinaShp@gmail.com Mm
+23:06:58.911 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:58.934 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:06:58.970 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:58.980 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:06:59.087 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:59.097 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:06:59.180 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Registration']
+23:06:59.190 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Registration']
+23:06:59.218 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:59.404 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:06:59.405 INFO  manager.ListenerWD - List size: 0
+23:06:59.405 INFO  TestBase - ASSERT passed: Not logged
+23:06:59.419 INFO  TestBase - ASSERT passed: isAlertAppear
+23:06:59.439 INFO  TestBase - ASSERT passed: isWrongFormatErrAppear
+23:06:59.441 INFO  TestBase - START TEST WITH NAME: regstrSuccess
+23:06:59.441 INFO  TestBase - Authorization check
+23:06:59.442 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:04.506 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:04.506 INFO  manager.ListenerWD - List size: 0
+23:07:04.506 INFO  TestBase - Not authorized
+23:07:04.508 INFO  TestBase - User login: MarinaShp424@gmail.com Mmarina12345$
+23:07:04.508 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //a[@href = '/login']
+23:07:04.534 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //a[@href = '/login']
+23:07:04.570 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:07:04.580 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Email']
+23:07:04.674 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:07:04.685 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //input[@placeholder='Password']
+23:07:04.762 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //*[text()=' Registration']
+23:07:04.773 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //*[text()=' Registration']
+23:07:04.798 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:04.934 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:04.934 INFO  manager.ListenerWD - List size: 1
+23:07:04.935 INFO  TestBase - ASSERT passed: isLogged
+23:07:04.938 INFO  TestBase - START TEST WITH NAME: removeAllContacts
+23:07:04.939 INFO  TestBase - Authorization check
+23:07:04.939 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:04.953 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:04.953 INFO  manager.ListenerWD - List size: 1
+23:07:04.953 INFO  TestBase - Authorized.
+23:07:04.953 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:10.004 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:10.004 INFO  manager.ListenerWD - List size: 0
+23:07:10.005 INFO  manager.HelperContact - Contact count : 0
+23:07:10.005 INFO  manager.HelperContact - Add new contact...
+23:07:10.006 INFO  manager.HelperContact - Add a new contact: Contact(name=Name1626, lastName=LastName, phone=34343451626, email=name1626@mail.com, address=Address, description=Description)
+23:07:10.006 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:07:10.033 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:07:10.069 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:10.084 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:10.155 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:10.167 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:10.236 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:10.248 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:10.333 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:10.345 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:10.417 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:10.428 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:10.496 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:10.507 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:10.567 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:10.579 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:11.689 INFO  manager.HelperContact - Add new contact...
+23:07:11.689 INFO  manager.HelperContact - Add a new contact: Contact(name=Name1823, lastName=LastName, phone=34343451823, email=name1823@mail.com, address=Address, description=Description)
+23:07:11.689 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:07:11.713 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:07:11.750 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:11.759 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:11.826 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:11.834 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:11.913 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:11.921 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:11.994 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:12.005 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:12.083 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:12.092 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:12.166 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:12.177 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:12.261 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:12.273 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:13.367 INFO  manager.HelperContact - Add new contact...
+23:07:13.367 INFO  manager.HelperContact - Add a new contact: Contact(name=Name1255, lastName=LastName, phone=34343451255, email=name1255@mail.com, address=Address, description=Description)
+23:07:13.367 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:07:13.391 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:07:13.422 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:13.434 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:13.514 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:13.523 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:13.600 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:13.610 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:13.699 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:13.709 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:13.789 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:13.798 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:13.856 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:13.865 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:13.939 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:13.947 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:15.041 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.082 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.083 INFO  manager.ListenerWD - List size: 3
+23:07:15.083 INFO  manager.HelperContact - Remove a contact...
+23:07:15.083 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.108 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.151 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:15.165 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:15.694 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.724 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.724 INFO  manager.ListenerWD - List size: 2
+23:07:15.725 INFO  manager.HelperContact - Remove a contact...
+23:07:15.725 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.743 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:15.774 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:15.783 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:16.314 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:16.339 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:16.339 INFO  manager.ListenerWD - List size: 1
+23:07:16.339 INFO  manager.HelperContact - Remove a contact...
+23:07:16.340 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:16.362 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:16.395 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:16.405 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:16.939 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:21.999 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:21.999 INFO  manager.ListenerWD - List size: 0
+23:07:22.004 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .contact-page_message__2qafk h1
+23:07:22.032 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .contact-page_message__2qafk h1
+23:07:22.053 INFO  TestBase - START TEST WITH NAME: removeFirstContact
+23:07:22.053 INFO  TestBase - Authorization check
+23:07:22.053 INFO  manager.ListenerWD - BeforeFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:22.071 INFO  manager.ListenerWD - AfterFindElements by ---> By.xpath: //button[text()='Sign Out']
+23:07:22.071 INFO  manager.ListenerWD - List size: 1
+23:07:22.071 INFO  TestBase - Authorized.
+23:07:22.071 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:27.105 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:27.105 INFO  manager.ListenerWD - List size: 0
+23:07:27.105 INFO  manager.HelperContact - Contact count : 0
+23:07:27.105 INFO  manager.HelperContact - Add new contact...
+23:07:27.105 INFO  manager.HelperContact - Add a new contact: Contact(name=Name1139, lastName=LastName, phone=34343451139, email=name1139@mail.com, address=Address, description=Description)
+23:07:27.105 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:07:27.126 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:07:27.167 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:27.174 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:27.235 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:27.244 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:27.316 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:27.324 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:27.397 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:27.407 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:27.480 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:27.490 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:27.571 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:27.582 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:27.654 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:27.668 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:28.761 INFO  manager.HelperContact - Add new contact...
+23:07:28.761 INFO  manager.HelperContact - Add a new contact: Contact(name=Name1059, lastName=LastName, phone=34343451059, email=name1059@mail.com, address=Address, description=Description)
+23:07:28.761 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:07:28.785 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:07:28.827 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:28.840 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:28.917 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:28.928 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:29.002 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:29.010 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:29.074 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:29.083 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:29.156 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:29.164 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:29.230 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:29.238 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:29.298 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:29.305 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:30.406 INFO  manager.HelperContact - Add new contact...
+23:07:30.406 INFO  manager.HelperContact - Add a new contact: Contact(name=Name1936, lastName=LastName, phone=34343451936, email=name1936@mail.com, address=Address, description=Description)
+23:07:30.406 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: a[href='/add']
+23:07:30.431 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: a[href='/add']
+23:07:30.468 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:30.481 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Name']
+23:07:30.564 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:30.574 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Last Name']
+23:07:30.652 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:30.661 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Phone']
+23:07:30.743 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:30.752 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='email']
+23:07:30.838 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:30.847 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='Address']
+23:07:30.924 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:30.934 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: [placeholder='description']
+23:07:31.014 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:31.023 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .add_form__2rsm2 button
+23:07:32.116 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:32.155 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:32.156 INFO  manager.ListenerWD - List size: 3
+23:07:32.156 INFO  manager.HelperContact - Contact count : 3
+23:07:32.156 INFO  manager.HelperContact - Remove a contact...
+23:07:32.156 INFO  manager.ListenerWD - BeforeFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:32.170 INFO  manager.ListenerWD - AfterFindElement by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:32.210 INFO  manager.ListenerWD - BeforeFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:32.222 INFO  manager.ListenerWD - AfterFindElement by ---> By.xpath: //button[text()='Remove']
+23:07:32.753 INFO  manager.ListenerWD - BeforeFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:32.786 INFO  manager.ListenerWD - AfterFindElements by ---> By.cssSelector: .contact-item_card__2SOIM
+23:07:32.786 INFO  manager.ListenerWD - List size: 2
+23:07:32.786 INFO  manager.HelperContact - Contact count : 2

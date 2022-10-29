@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RemoveContact extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition(){
         logger.info("Authorization check");
         if(!app.getHelperUser().isLogged()) {
@@ -17,7 +17,7 @@ public class RemoveContact extends TestBase{
         app.getHelperContact().providerOfContacts();
     }
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void removeFirstContact(){
         //int cntBefore = app.getHelperContact().countContacts();
         //app.getHelperContact().removeOneContact();

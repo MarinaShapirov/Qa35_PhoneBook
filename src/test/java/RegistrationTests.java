@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase {
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         logger.info("Authorization check");
         if (app.getHelperUser().isLogged()) {
@@ -15,7 +15,7 @@ public class RegistrationTests extends TestBase {
             logger.info("Not authorized");
     }
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void regstrSuccess(){
         int i = (int)(System.currentTimeMillis()/1000)%3600;
         User user = new User().withEmail("MarinaShp"+ i+ "@gmail.com").withPassword("Mmarina12345$");
@@ -47,7 +47,7 @@ public class RegistrationTests extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = {"smoke_group"})
     public void regstrNegative_WrongPsw() {
         User user = new User().withEmail("MarinaShp@gmail.com").withPassword("Mm");
         logger.info("User login: " + user.getEmail()+ " " + user.getPassword());
